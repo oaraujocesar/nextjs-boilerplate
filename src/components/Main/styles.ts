@@ -30,5 +30,5 @@ export const Description = styled.h2`
 
 export const Illustration = styled.img`
   margin-top: 3rem;
-  width; min(30rem, 100%);
+  width: min(30rem, 100%);
 `
