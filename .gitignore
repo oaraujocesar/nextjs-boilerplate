@@ -38,3 +38,7 @@ yarn-error.log*
 
 # vscode config
 .vscode
+
+# pwa stuff
+public/sw.js
+public/workbox-*.js
