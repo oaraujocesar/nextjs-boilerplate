@@ -12,8 +12,8 @@
     "lint": "eslint src --max-warnings=0",
     "postinstall": "husky install",
     "prepare": "husky install",
-    "test": "jest",
-    "test:watch": "jest --watchAll",
+    "test:unit": "jest",
+    "test:unit:watch": "jest --watchAll",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -21,7 +21,7 @@
   "lint-staged": {
     "src/**/*": [
       "yarn lint --fix",
-      "yarn test --findRelatedTests --bail"
+      "yarn test:unit --findRelatedTests --bail"
     ]
   },
   "dependencies": {
